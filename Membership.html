@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+    <title>Hunk Gym</title>
+
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	
+	<script>
+	 window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 2 || document.documentElement.scrollTop > 2) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+	</script>
+	
+</head>
+<body>
+<style type="text/css">
+body:before {
+  background:url(dwayne.jpg) repeat center fixed;
+  display: block; 
+  content:""; 
+  position: fixed; 
+  z-index:-1;
+  top:0; 
+  left: 0; 
+  right: 0; 
+  height: 200%; 
+  width: 100%;
+  opacity:.5;}
+</style>
+
+		
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+		
+		<div class="nav_bar">
+		<ul>
+			<li><a href="index.html">Home</a></li>						
+			<li><a href="Tour.html">Tour</a></li>
+			<li><a href="Merchandise.html">Merchandise</a></li>
+			<li><a href="Membership.html">Membership</a></li>
+			<li><a href="Register.html">Register</a></li></br>
+		</ul>
+	</div>
+	
+	<div id="page">
+		<div id="nycgym">
+			<h1><a href="home.html">Hunk Gym</a></h1>
+		
+		</div>
+		
+		<div id="img">
+		<img src="dwayne.gif">
+		</div>
+		<br><br><br>
+		
+		
+		<div id="content">
+			<h2><b>Membership </b></h2>
+			<p>
+				Choose one of the following membership plans below and  get the dream bod' of your life!
+			</p>
+			<p> 
+				(Each plan has its own unique benefits)
+			</p>
+		</div></br></br>
+		
+		<div id="content2">
+			<h2><b><font color="RED">PLAN 1</font> </b></h2>
+			<p>
+				<center>This is for the casuals.
+			</p>
+			<p> <h1><font color="black">$24.99 a Month</font></h1></p>
+			<p> 
+				UNIQUE BENIFIT: GET A FREE TOASTER<center>
+			</p>
+
+		</div>
+		
+		<div id="content3">
+			<h2><b><font color="ORANGE">PLAN 2</font> </b></h2>
+			<p>
+				<center>This is for the moderate level people.
+			</p>
+			
+			<p><h1><font color="black">$49.99 a Month</font></h1></p>
+			<p> 
+				UNIQUE BENIFIT: GET A INSPIRATIONAL SPEECH FROM "THE ROCK" <center>
+			</p>
+		</div>
+		
+		<div id="content4">
+			<h2><b><font color="blue">PLAN 3</font> </b></h2>
+			<p>
+				<center>HOLY GUACEMOLE, YOU'RE GONA BE RIPPED!
+			</p>
+			<p><h1><font color="black">$99.99 a Month</font></h1></p>
+			<p> 
+				UNIQUE BENIFIT: steroids<center>
+			</p>
+			
+		</div>
+		
+		<div id="content">
+			<h2><b><center><font color="BLACK">JUST LOOK AT OUR FIRST TRAINEE!</font></center> </b></h2>
+			
+<center><script>
+
+function rippedguy()
+
+{
+var ImageObject = document.getElementById("gym");
+
+ImageObject.src = "strongguy.jpg";
+}
+function notsorippedguy()
+{
+var ImageObject = document.getElementById("gym");
+
+ImageObject.src = "weakguy.jpg";
+}
+
+</script>
+</head>
+
+<body>
+
+<img id="gym" onmouseover="rippedguy()" onmouseout="notsorippedguy()" src=
+"weakguy.jpg" ><center><br><br>
+
+				
+		
+	</div>
+	
+	
+	
+</body>
+</html>

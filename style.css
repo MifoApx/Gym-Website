@@ -1,0 +1,148 @@
+
+p{ line-height: 1em; }
+h1, h2, h3, h4{
+    color: Green;
+	font-weight: normal;
+	line-height: 1em;
+	margin: 0 0 .5em 0;
+	
+}
+h1{ font-size: 2em; }
+h2{ font-size: 2em; }
+a{
+	color: black;
+	
+}
+	a:hover,
+	a:active{ text-decoration: underline; }
+
+
+
+body{
+    font-family: arial; font-size: 100%; line-height: 1.2em; width: 100%; margin: auto;
+}
+
+#page{ margin: 20px; }
+
+
+#nycgym{
+	width: 35%;
+	margin-top: 5px;
+	font-family: Impact;
+	
+}
+
+.nav_bar {
+			margin: auto;						
+			width: 860px;
+			padding: 0px 0px 0px 0px;
+			float: right;			
+			height: 82px;
+}
+.nav_bar ul {
+		padding: 0;
+		list-style: none;
+}
+	.nav_bar ul li {
+		float:left;
+		font-size: 16px;
+		font-weight:bold;
+		margin-right: 10px;
+}
+	.nav_bar ul li a {
+		text-decoration: none;
+		color: #fdfefe ;
+		background:#c0c0c0;
+		border: 1px solid #000000;
+		border-bottom: none;
+		padding:22px 20px 22px 20px;
+		-webkit-border-top-right-radius: 10px;
+		-webkit-border-top-left-radius: 10px;
+		-moz-border-radius-topleft: 10px;
+		-moz-border-radius-topright: 10px;
+		width: 85px;
+		display: block;
+		text-align: center;
+		}
+
+		.nav_bar ul li a:hover{
+			text-decoration:none;
+			color: #000000;
+			background:#96e0e9;
+			-moz-transition: background-color 200ms ease-in;
+			-webkit-transition: background-color 200ms;
+			-ms-transition: background-color 200ms ease-in;
+			-o-transition: background-color 200ms ease-in;
+			transition: background-color 200ms ease-in;
+		}
+
+#content{
+	margin: -30px;
+	background: white;
+	padding: 20px;
+	clear: both;
+	font-family:georgia
+	
+}
+
+#content,
+ul li a{ box-shadow: 0px 1px 1px #999; }
+
+#content2{
+	margin: 100px;
+	background: pink;
+	padding: 20px;
+	
+	font-family:georgia
+	
+}
+
+#content2,
+ul li a{ box-shadow: 0px 1px 1px #999;
+ border-radius: 8px; }
+
+#content3{
+	margin: 100px;
+	background: yellow;
+	padding: 20px;
+	font-family:georgia
+	
+}
+
+#content3,
+ul li a{ box-shadow: 0px 1px 1px #999; 
+ border-radius: 8px;}
+
+#content4{
+	margin: 100px;
+	background: skyblue;
+	padding: 20px;
+	font-family:georgia
+	
+}
+
+#content4,
+ul li a{ box-shadow: 0px 1px 1px #999;
+ border-radius: 8px; }
+
+#img {
+    clear: both;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#myBtn:hover {
+  background-color:  #641e16;

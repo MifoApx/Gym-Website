@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<head>
+<title>Hunk's Gym</title>
+<link rel="stylesheet" type="text/css" href="style2.css">
+	
+	<div class="nav_bar">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="Tour.html">Tour</a></li>
+			<li><a href="Merchandise.html">Merchandise</a></li>
+			<li><a href="Membership.html">Membership</a></li>
+			<li><a href="Register.html">Register</a></li>
+		</ul>
+	</div>
+
+	<div id="page">
+		<div id="nycgym">
+			<u><h1>HUNK GYM</h1></u>
+		
+		</div>
+		<div id="img">
+		<img style="position:absolute;TOP:102px;LEFT:20px;border-radius:30px" src="johnny.jpg" height="100" width="100">
+		</div>
+		
+	<style type="text/css">
+body:before {
+  background:url(dwayne.jpg) repeat center fixed;
+  display: block; 
+  content:""; 
+  position: fixed; 
+  z-index:-1;
+  top:0; 
+  left: 0; 
+  right: 0; 
+  height: 350%; 
+  width: 100%;
+  opacity:.4;}
+</style>
+</style>
+
+<script>
+function ValidateForm()
+{
+if (document.forms["gymForm"]["username"].value==null || document.forms["gymForm"]["username"].value=="")
+{
+alert("Username must be filled out");
+return false;
+}
+	if (document.forms["gymForm"]["password"].value==null || document.forms["gymForm"]["password"].value=="")
+{
+alert("Password must be filled out");
+return false;
+}
+if (document.forms["gymForm"]["name"].value==null || document.forms["gymForm"]["name"].value=="")
+{
+alert("Name must be filled out");
+return false;
+}
+if (document.forms["gymForm"]["address"].value==null || document.forms["gymForm"]["address"].value=="")
+{
+alert("Address must be filled out");
+return false;
+}
+if (document.forms["gymForm"]["city"].value==null || document.forms["gymForm"]["city"].value=="")
+{
+alert("City must be filled out");
+return false;
+}
+if (document.forms["gymForm"]["state"].value==null || document.forms["gymForm"]["state"].value=="")
+{
+alert("State must be filled out");
+return false;
+}
+if (document.forms["gymForm"]["zip"].value==null || document.forms["gymForm"]["zip"].value=="")
+{
+alert("Zip must be filled out");
+return false;
+}
+if (document.forms["gymForm"]["zip"].value==null || document.forms["gymForm"]["zip"].value=="")
+{
+alert("Zip must be filled out");
+return false;
+}
+if (document.forms["gymForm"]["phone"].value==null || document.forms["gymForm"]["phone"].value=="")
+{
+alert("Phone must be filled out");
+return false;
+}
+return true;
+}
+
+function doClear()
+{
+
+	document.gymForm.username.value = "";
+	document.gymForm.password.value = "";
+	document.gymForm.name.value = "";
+	document.gymForm.address.value = "";
+	document.gymForm.city.value = "";
+	document.gymForm.state.value = "";
+	document.gymForm.zip.value = "";
+	document.gymForm.phone.value = "";
+
+	/*document.gymForm.package[0].checked = false;
+	document.gymForm.pageage[1].checked = false;
+	document.gymForm.package[2].checked = false;*/	
+
+	
+	   var ele = document.getElementsByName("package");
+   for(var i=0;i<ele.length;i++)
+      ele[i].checked = false;
+	
+	
+	return;
+	}
+</script>
+</head>
+<html>
+<body>
+<br><br><br><br><br><br>
+<form name="gymForm" action="http://www.WebsiteDevelopmentBook.com/FormEcho.php" method="post" onsubmit="return ValidateForm()">
+<font color=""><center><h1><b><u>Hunk Gym's Registration</u></b></h1>
+		<p>
+		 <h4>Step 1: Create a username and password:</h4>
+			<b>Username:</b><input name="username" size="50" type="text"><br>
+			<b>Password:</b><input name="password" size="50" type="password" minlength="4" maxlength="8"><br>
+		
+		</p>
+		<p>
+		<h4>Step 2: Enter your name, address, and phone number:</h4>
+
+			<b>Name:</b>&nbsp;&nbsp;&nbsp;<input name="name" size="50" type="text"><br>
+			<b>Address:</b><input name="address" size="50" type="text"><br>
+			<b>City:</b>&nbsp;&nbsp;&nbsp;<input name="city" size="15" type="text">
+			<b>State:</b><input name="state" size="2" type="text" maxlength="2">
+			<b>Zip:</b><input name="zip" size="5" type="text" maxlength="5"><br>
+			<b>Phone:</b>&nbsp;&nbsp;<input name="phone" size="50" type="text"><br>
+		</p>
+		<p>
+		<h4>Step 3: Choose your membership type:</h4>
+		
+				<input name="package" type="radio"><font color="pink"><b>Wimpy Pink</b></font>
+				<input name="package" type="radio"><font color="yellow"><b>Sissy Yellow</b></font>
+				<input name="package" type="radio"><font color="blue"><b>Badass Blue</b></font><br>
+		
+		</p></font>
+<input type="submit" value="Click to Submit"/>
+<input type="button" value="Clear Entries" onClick="doClear()"></center>
+</form>
+
+
+
+</body>
+</html>
